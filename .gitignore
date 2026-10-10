@@ -1,0 +1,40 @@
+cd ~/Downloads/project6
+
+cat > .gitignore <<'EOF'
+# API keys and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.deepeval/
+
+# Frontend
+node_modules/
+dist/
+build/
+coverage/
+
+# Large datasets
+archive/
+
+# Local storage and model weights
+data/qdrant_storage/
+*.db
+*.sqlite
+*.sqlite3
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Logs and temporary files
+logs/
+*.log
+.DS_Store
+EOF
