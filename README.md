@@ -310,19 +310,6 @@ The system implements a centralized, production-grade LLM routing mechanism with
 5. **OpenAI (Fifth)** — `gpt-4o-mini`
 6. **Dynamic Local Operations Engine (Final Fallback)** — Fully offline zero-hardcoded NLP domain analyzer generating structured root causes, SOPs, and KDS pacing actions.
 
-### Configuring API Keys
-1. **Via `.env` file** in the project root:
-   ```env
-   ANTHROPIC_API_KEY=sk-ant-api03-...
-   ANTHROPIC_MODEL=claude-sonnet-5-5
-   NVIDIA_API_KEY=nvapi-...
-   NVIDIA_MODEL=openai/gpt-oss-20b
-   OPENROUTER_API_KEY=sk-or-v1-...
-   GEMINI_API_KEY=AIzaSy...
-   OPENAI_API_KEY=sk-...
-   LLM_PROVIDER=auto   # Options: auto, anthropic, nvidia, openrouter, gemini, openai, local
-   LLM_TIMEOUT=30.0
-   LLM_MAX_RETRIES=2
    ```
 2. **Via the UI Settings Modal**:
    - Click the **Gear icon** in the top-right corner of the React dashboard.
